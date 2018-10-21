@@ -1,0 +1,11 @@
+# BEGIN custom php.ini PHPedge
+<IfModule mod_suphp.c>
+    suPHP_ConfigPath /home/aksvi562/paginas/sismaxi.com.br
+</IfModule>
+# END custom php.ini
+
+
+
+RewriteEngine on
+# Use PHPedge as default
+AddHandler application/x-httpd-php-edge .php

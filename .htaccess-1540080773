@@ -1,0 +1,8 @@
+# BEGIN custom php.ini PHP52
+<IfModule mod_suphp.c>
+    suPHP_ConfigPath /home/aksvi562/paginas/sismaxi.com.br
+</IfModule>
+# END custom php.ini
+
+
+RewriteEngine on
