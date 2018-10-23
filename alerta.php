@@ -1,30 +1,23 @@
 <meta charset="utf-8">
 <?php
-  session_start();
-	include ('database.php');
-	if (isset($_SESSION['login'])) {
-		# do nothing...
-	}else{
-		echo "<script> alert('Você deve estar logado para realizar esta operação!');window.location.href='login.php';</script>";
-	}
-	
-	if(@$_POST['opcao']){
-	  
-		$lat=$_POST['latitude'];
-		$long=$_POST['longitude'];
-		$opcao=$_POST['opcao'];
-		
-		//cria a query
-		$sql="insert into alertas (lat,long,opcao,pessoa_codigo) values ('$lat','$long','$opcao','$pessoa') ";
-		
-		//efetua a query e verifica se a mesma ocorreu como esperado
-		if($mysqli->query($sql)){echo "<script>alert('deu boa');</script>";}else{
-		  	header('location:alerta.php');
+	session_start();
+	if(isset($_SESSION['login'])){
+		#do nothing
+		}else{
+			header('location:/login');
 		}
-		
-	}
-	
+	if (@$_POST['botao']=="HOME"){
+      header('location:index.php');		  
+		}
 ?>
+<style type="text/css">
+  <--
+  @font-face {
+		     font-family: letra;
+		     src: url('HEINEKEN.ttf');
+		}
+		-->
+</style>
  <html lang="en">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,42 +25,42 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>.:ALERTA:.</title>
+    <link href="css/alarme.css" rel="stylesheet">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="css/sb-admin.css" rel="stylesheet">
   </head>
   <body class="bg-dark" onload="getLocation()">
-    <div class="container">
+    <div class="container-fluid">
       <div class="card card-login mx-auto mt-5">
-            <!--<p id="demo"></p-->
         <div class="card-header">Alerta</div>
-        <div class="card-body">
 
-          <form method="POST" >
-            <center>
-          	<input type="submit" class="btn btn-success" name="opcao" value="Situação normalizada">
-          	<br>
-          	<br>
-          	<input type="submit" class="btn btn-warning" name="opcao" value="Situação ficando perigosa">
-          	<br>
-          	<br>
-          	<input type="submit" class="btn btn-danger" name="opcao" value="Situação perigosa">
-          	<br>
-          	<input type="hidden" name="longitude" id="id_longitude" />
-          	<input type="hidden" name="latitude" id="id_latitude" />
+          <form action="dbAlerta.php">
+  
+            <div class="row">
+              <div class="col-sm-4 col-xs-12">
+              	<font face="letra"><input type="submit" class="btn btn-success btn-block btn-btn-lg" name="opcao1" id="1" value="Situação normalizada"></font>
+            	</div>
 
-          </center>
-          </form>
-
+              <div class="col-sm-4 col-xs-12">
+            	  <font face="letra"><input type="submit" class="btn btn-warning btn-block btn-btn-lg" name="opcao2" id="2" value="Situação de alerta"></font>
+            	</div>
+          
+              <div class="col-sm-4 col-xs-12">
+              <font face="letra"><input type="submit" class="btn btn-danger btn-block btn-btn-lg" name="opcao3" id="3" value="Situação perigosa"></font>
+            	</div>
+          	</div>
+          	
+          	<input type="hidden" name="id_longitude" id="id_longitude" />
+          	<input type="hidden" name="id_latitude" id="id_latitude" />
+          	</form>
+          	<form method="POST">
           <div class="text-center">
-            <a class="d-block small mt-3" href="index.php">HOME</a>
+            <input type="submit" name="botao" value="HOME" class="btn3 btn-info btn-lg">
           </div>
-        </div>
+          </form>
       </div>
     </div>
     <script>
-        // var x = document.getElementById("demo");
-
         function getLocation() {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(showPosition);
@@ -81,9 +74,11 @@
 
             var longitude = position.coords.longitude;
             document.getElementById('id_longitude').value =  longitude;
+            x=longitude;
 
             latitude = position.coords.latitude;
             document.getElementById('id_latitude').value =  latitude;
+            y=latitude;
         }
 
     </script>

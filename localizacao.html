@@ -1,6 +1,7 @@
-<!DOCTYPE html>
 <html>
 <body onload="getLocation()">
+
+	<p id="demo"></p>
 
 	<script>
 		var x = document.getElementById("demo");
@@ -14,11 +15,19 @@
 		}
 
 		function showPosition(position) {
+			/*var $latitude = position.coords.latitude;
+			var $longitude = position.coords.longitude;
+
+	        var $url = "localizacao.php?pLatitude=" + $latitude + "&pLongitude=" + $longitude;
+	        $.get($url, function( data ){               
+	        
+	        });  */
 		    
-		    //x.innerHTML
-		  	var local = "Latitude: " + position.coords.latitude + 
-		    "<br>Longitude: " + position.coords.longitude;
-		    JSON.parse(local);
+		    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    		"<br>Longitude: " + position.coords.longitude;
+
+		    /*x.innerHTML = '{ "employees" : [{"Latitude":"' + position.coords.latitude + 
+    		'"},{"Longitude":"' + position.coords.longitude + '"}]}';  */  		
 		}
 	</script>
 

@@ -1,0 +1,72 @@
+[21-Oct-2018 00:09:52 America/Chicago] PHP Warning:  include(database.php): failed to open stream: No such file or directory in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php on line 77
+[21-Oct-2018 00:09:52 America/Chicago] PHP Warning:  include(database.php): failed to open stream: No such file or directory in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php on line 77
+[21-Oct-2018 00:09:52 America/Chicago] PHP Warning:  include(): Failed opening 'database.php' for inclusion (include_path='.:/opt/php70/lib/php') in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php on line 77
+[21-Oct-2018 00:09:52 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php:80
+Stack trace:
+#0 {main}
+  thrown in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php on line 80
+[21-Oct-2018 00:10:11 America/Chicago] PHP Warning:  include(database.php): failed to open stream: No such file or directory in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php on line 77
+[21-Oct-2018 00:10:11 America/Chicago] PHP Warning:  include(database.php): failed to open stream: No such file or directory in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php on line 77
+[21-Oct-2018 00:10:11 America/Chicago] PHP Warning:  include(): Failed opening 'database.php' for inclusion (include_path='.:/opt/php70/lib/php') in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php on line 77
+[21-Oct-2018 00:10:11 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php:80
+Stack trace:
+#0 {main}
+  thrown in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php on line 80
+[21-Oct-2018 01:06:56 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php:82
+Stack trace:
+#0 {main}
+  thrown in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php on line 82
+[21-Oct-2018 01:07:26 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php:82
+Stack trace:
+#0 {main}
+  thrown in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php on line 82
+[21-Oct-2018 01:08:14 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php:81
+Stack trace:
+#0 {main}
+  thrown in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php on line 81
+[21-Oct-2018 01:09:23 America/Chicago] PHP Parse error:  syntax error, unexpected '' + " AND opcao = '' (T_CONSTANT_ENCAPSED_STRING) in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php on line 80
+[21-Oct-2018 01:11:25 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php:82
+Stack trace:
+#0 {main}
+  thrown in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php on line 82
+[21-Oct-2018 01:11:48 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php:84
+Stack trace:
+#0 {main}
+  thrown in /home/aksvi562/paginas/sismaxi.com.br/dashboard/index.php on line 84
+[21-Oct-2018 02:01:43 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function earray_push() in /home/aksvi562/paginas/sismaxi.com.br/dashboard/dbDashboard.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/aksvi562/paginas/sismaxi.com.br/dashboard/dbDashboard.php on line 13
+[21-Oct-2018 02:07:41 America/Chicago] PHP Parse error:  syntax error, unexpected '%' in /home/aksvi562/paginas/sismaxi.com.br/dashboard/dbDashboard.php on line 8
+[21-Oct-2018 03:18:51 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/aksvi562/paginas/sismaxi.com.br/dashboard/dbDashboard.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/aksvi562/paginas/sismaxi.com.br/dashboard/dbDashboard.php on line 14
+[21-Oct-2018 03:19:33 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/aksvi562/paginas/sismaxi.com.br/dashboard/dbDashboard.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/aksvi562/paginas/sismaxi.com.br/dashboard/dbDashboard.php on line 14
+[21-Oct-2018 03:19:37 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/aksvi562/paginas/sismaxi.com.br/dashboard/dbDashboard.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/aksvi562/paginas/sismaxi.com.br/dashboard/dbDashboard.php on line 14
+[21-Oct-2018 03:19:41 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/aksvi562/paginas/sismaxi.com.br/dashboard/dbDashboard.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/aksvi562/paginas/sismaxi.com.br/dashboard/dbDashboard.php on line 14
+[21-Oct-2018 03:19:53 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/aksvi562/paginas/sismaxi.com.br/dashboard/dbDashboard.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/aksvi562/paginas/sismaxi.com.br/dashboard/dbDashboard.php on line 14
+[21-Oct-2018 03:20:02 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/aksvi562/paginas/sismaxi.com.br/dashboard/dbDashboard.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/aksvi562/paginas/sismaxi.com.br/dashboard/dbDashboard.php on line 14
+[21-Oct-2018 03:20:33 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/aksvi562/paginas/sismaxi.com.br/dashboard/dbDashboard.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/aksvi562/paginas/sismaxi.com.br/dashboard/dbDashboard.php on line 14
+[21-Oct-2018 03:21:19 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function fetch_array() on boolean in /home/aksvi562/paginas/sismaxi.com.br/dashboard/dbDashboard.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/aksvi562/paginas/sismaxi.com.br/dashboard/dbDashboard.php on line 14
